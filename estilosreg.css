@@ -1,0 +1,102 @@
+/* Uso de los gradientes */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #373B44;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsl(311, 50%, 84%), hsl(266, 16%, 49%)), url(../img/foto.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family:cursive;
+}
+/* Centra los 2 textos y los separa  del header*/
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+     /* Uso del menu  */
+nav{
+    text-align:right ;
+    padding: 30px 50px 0 0;
+}
+
+nav>a{
+    color: #fff;
+    font-weight: 300; 
+    text-decoration: none;
+    margin-right: 10px;
+}
+/* Indicaciones de que cuando se pase el puntero se subraye */
+nav> a:hover{
+    text-decoration: underline;
+}
+.Registro{
+    text-align: center;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #90AFEB;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@font-face{
+    font-family: "tipografia";
+    src: url(Cinzel\Cinzel-VariableFont_wght.ttf);
+}
+
+.form__titulo {
+    color: #90AFEB;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: #b40be7;
+}
+
+.form__grupo {
+    margin-bottom: 15px;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 5px;
+    color:  #FF1183;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fffcfc;
+    border-radius: 4px;
+}
+
+.form__boton{
+    background-color: #AA8ECD;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form__boton:hover {
+    background-color:#AA8ECD, 10%;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="estilosreg.css">
+</head>
+<body>
+    <header>                                    
+        <!--Cabecera del menu -->
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Mujer</a>
+                <a href="#">Adolescentes</a>
+                <a href="#">Accesorios</a>
+                <a href="#">Información</a>
+                <a href="#">Login</a>
+            </nav>
+    
+            <!--Mensaje del la imagen con efecto weid(clase ola)  -->
+            <section class="textos-header">
+                <h1>Fashion Frensy</h1>
+                <h2>¡Elegancia y servicio cerca de ti!</h2>
+            </section> 
+    
+            <!--Efecto weid (clase ola)  -->
+    
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>
+        </header>
+    <br>
+        <h1 class="Registro">R E G I S T R A T E </h1>
+        <!--Registro de usuario-->
+        <form class="form">
+            <h2 class="form__titulo">Registro de Usuario</h2>
+            <div class="form__grupo">
+                <label for="name" class="form__label">Nombre:</label>
+                <input type="text" id="name" class="form__input" required>
+            </div>
+            <div class="form__grupo">
+                <label for="email" class="form__label">Correo Electrónico:</label>
+                <input type="email" id="email" class="form__input" required>
+            </div>
+            <div class="form__grupo">
+                <label for="password" class="form__label">Contraseña:</label>
+                <input type="password" id="password" class="form__input" required>
+            </div>
+            <div class="form__grupo">
+                <button type="submit" class="form__boton">Registrarse</button>
+            </div>
+            <div class="form__grupo">
+                <button type="submit" class="form__boton">Cancelar</button>
+            </div>
+        </form>
+
+</body>
+</html>
