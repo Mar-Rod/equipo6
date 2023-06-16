@@ -3,16 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .logo{
   border-radius: 100px;
   width: 70px;
   box-shadow: 5px 8px 5px rgba(168, 7, 117, 0.4);
 
 }
-
+:root{
+  --color-principal:green;
+  --color-secundario: white;
+}
 h3{
   text-align: center;
+  color: var (--color-principal);
+  background-color: var(--color-secundario);
   
+}
+.fondo-oscuro{
+  background-color: brown;
+  color: wheat;
 }
 .container1 {
   background-color: black;
