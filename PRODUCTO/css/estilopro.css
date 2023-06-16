@@ -133,6 +133,22 @@ font-size: 50px;
   cursor: pointer;
 
 }
+#pago{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr) 1fr;
+  grid-template-rows: repeat(2,50);
+  row-gap: 1px;
+
+}
+
+.imm{
+  border-radius: 10px;
+  border: 42px solid black;
+   border-width: 10px;
+   border-color: 660033;
+   background-color: cc3366;
+
+}
 @import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
 .container {
   margin: auto;
