@@ -59,8 +59,9 @@
           <div class="product-image">
             <img class="img" src="/img/images.jpg">
             <div class="buttons">
-              <button class="bolsa1">🛍️</button>
-              <button class="heart-button1">&#10084;</button>
+              <button class="bolsa1" onclick="alert('Producto añadido a la bolsa');">🛍️</button>
+              
+              <button class="heart-button1"onclick="alert('Te gusta este producto');">&#10084;</button>
             </div>  
           </div>
         </div>
@@ -70,13 +71,29 @@
       <div class="column-xs-12 column-md-5">
         <h3>Vestido Azul</h3>
         <h3>$719.99</h3>
+        
+
         <div class="boton">
-        <button class="add-to-cart" id="btn-cambio-color">Comprar</button>
+        <button class="add-to-cart"  onclick="alert('Producto añadido a la bolsa');" id="btn-cambio-color" >COMPRAR</button>
+      
         </div>
         <div class="description">
           <h3>Talla</h3>
+          
           EXCH CH M G EXG
-          <h4>- 1 +</h4>
+          <p></p>
+         
+
+          <div class="col-sm-12 col-xs-12">
+          <button class="add-to-car" onclick="disminuirNumero()">-</button>
+          <span id="numeros">1</span>
+          
+          <button class="add-to-car" onclick="aumentarNumero()">+</button>
+        </div>
+          <div class="boton">
+            <button class="add-to-cart"  id="btn-cambio-color" onclick="cambiarColor()" >Generar color</button>
+            <div id="miElemento">COLOR</div><p></p>
+            </div>
           <h5>Detalles</h5>
           <p>Vestido elegante, color azul electrico, diseñado exclusivamente por manos Mexicanas.  </div>
         <ul class="image-list">
@@ -97,12 +114,12 @@
         <div class="container1">
           <img src="/img/images.jpg" alt="Joven con vestido" class="product-image">
           <div class="buttons">
-            <button class="bolsa">🛍️</button>
+            <button class="bolsa"  onclick="alert('Producto añadido a la bolsa');">🛍️</button>
             <span class="price">$49.99</span>
-          <button class="heart-button">&#10084;</button>
+          <button class="heart-button" onclick="alert('Te gusta este producto');">&#10084;</button>
           </div>
         <div class="boton">
-          <button class="add-to-cart">Comprar</button>
+          <button class="add-to-cart" onclick="alert('Producto añadido a la bolsa');">Comprar</button>
           </div>
         </div>
       </div>

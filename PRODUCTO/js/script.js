@@ -28,7 +28,31 @@ console.log(document.querySelector("h1").classList.contains("titulo"))
     $DIV.classList.toggle("fondo-oscuro")
  }
 
-const $BOTON = document.getElementById("boton")
-$BOTON.onclick = boton
+//const $BOTON = document.getElementById("boton")
+//$BOTON.onclick = boton
 
 
+function cambiarColor() {
+    var elemento = document.getElementById("miElemento"); 
+    var colores = ["red", "blue", "green", "yellow", "purple", "orange"];
+    var colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+    
+    elemento.style.backgroundColor = colorAleatorio;
+  }
+  
+  var numero = 1; 
+
+function aumentarNumero() {
+  numero++;
+  mostrarNumero();
+}
+
+function disminuirNumero() {
+  numero--;
+  mostrarNumero();
+}
+
+function mostrarNumero() {
+  var elementoNumero = document.getElementById("numeros");
+  elementoNumero.textContent = numero;
+}

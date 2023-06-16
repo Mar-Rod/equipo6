@@ -15,6 +15,24 @@
   --color-principal:green;
   --color-secundario: white;
 }
+.add-to-car{
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  
+  justify-content: center;
+  background: #f703aa;
+  border-radius: 20px;
+  color: #000000;
+  text-align: center;
+  width: 20px;
+  height: 45px;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: translateZ(0);
+  transition: color 0.3s ease;
+  letter-spacing: 0.0625rem; 
+}
 h3{
   text-align: center;
   color: var (--color-principal);
@@ -879,6 +897,7 @@ footer {
 
 .image-list li {
   margin: 0;
+  
 }
 .img{
   width: 100px; 
@@ -916,7 +935,7 @@ footer {
   }
   .image-list li {
     margin: 0 0.75rem 0 0;
-    flex-basis: 100%;
+    flex-basis: 100px;
   }
   .image-list li:nth-child(3) {
     margin: 0;
