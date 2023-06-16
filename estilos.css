@@ -1,0 +1,491 @@
+/* Permite quitar el espacio entre el header y la página */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* añade el tipo de letra a la página */
+
+body{
+    font-family: 'Cinzel'; 
+    margin: 0;
+}
+
+a{
+    text-decoration: none; /*Quita el linkeado del texto */
+    color: #F7B6EB;
+}
+
+/* Clase que permite ordenar la página */
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+}
+
+/* Modificar los encabezados del titulo */
+.titulo{
+    color: #80689E;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,.8); /*sombras de los titulos*/
+}
+
+/* Uso de los gradientes */
+
+header{
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex; /* Mostrar los elementos de manera horizontal */
+    justify-content: space-between; /* Ubicar los elementos en el eje principal y los separa*/
+    align-items: center;   /*Alinea los elementos verticalmente*/ 
+    padding: 10px; /*Centra los elementos del borde*/
+    box-sizing: border-box;
+    height: 70px;
+    transition: 0.5s;
+    background-color: #AA8ECD;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px; /* Cambia el tamaño del logo */
+    margin-right: 10px;
+    border-radius: 30px;
+}
+
+.menu-item{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5;
+    color: #f2f2f2;
+}
+
+.cta{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    color: #f2f2f2;
+    font-weight: 600;
+}
+
+
+
+ /* Uso del menu  */
+nav{
+    text-align:right ;
+    padding: 30px 50px 0 0;
+}
+
+nav>a{
+    color: #fff;
+    font-weight: 600; /*Tamaño del la letra del menú*/
+    text-decoration: none; /*Quitar el subrayado del menu*/
+    margin-right: 10px;
+    padding-right: 10px;
+}
+/* Indicaciones de que cuando se pase el puntero se subraye */
+nav> a:hover{
+    text-decoration: underline;
+    color: #414141; /* cuando se pase el cursor cambie de color */
+}
+/* Centra los 2 textos y los separa  del header*/
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+/* Ubicación de la ola en la imagen (efecto wieh) */
+.wave{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Parte de sobrenosotros */
+
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Tamaño de la imagen */
+.imagen-about-us{
+    width: 50px;
+    
+}
+
+/* Separa imagen del texto */
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+/* Tamaño del titulo del parrafo */
+.contenido-textos h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Modificación de los textos del sobre nosotros */
+.contenido-textos h3 span{
+    background: #af20d3;
+    color:#fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 0 6px #90AFEB;
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+/*Galeria */
+.portafolio{
+    background: #f2f2f2;
+}
+
+/*Posiciones de la galeria */
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*Modificación del tamaño de la galeria*/
+.imagen-port{
+    width:30%;
+    margin-bottom: 10px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px #90AFEB;
+}
+
+.imagen-port>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+    /*Posicion de la Galeria y elementos(animaciones y propiedades)*/
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(268, 74%, 59%, 0.582);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+/*Animaciones del cursor con el icono */
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Seccion de Clientes*/
+
+
+/*Acomodo de las tarjetas */
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Posiciones de las imagenes en las cards */
+.cards .card{
+    background: #80689E;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+/*Modificación del texto de las cards*/
+.cards .card > .contenido-texto-card{
+    width:60%;
+    color: #ffff;
+}
+
+/*Modificacion del parrafo de las cards */
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* Our team, contenido de los los servicios principales*/
+
+/*Modificación del largo */
+.about-services{
+    background: #fff;
+    padding-bottom: 30px;
+}
+
+/*Contenido de servicio*/
+.servicio-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Contenido de servicios individual */
+.servicio-ind{
+    width: 28%;
+    text-align: center;
+}
+/*Para centrar todas las imagenes del servicio */
+.servicio-ind img{
+    width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+/*Modificación de los parrafos de galeria*/
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* footer */
+/*Cambio del pie de página */
+footer{
+    background: #AA8ECD;
+    padding: 60px 0 30px 0;  /*arriba,derecha,abajo,izq */
+    margin: auto;
+    overflow: hidden;   /*Nada salga de footer */
+}
+
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly; /*Repartir elemenentos equitativamente */
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+/*Modificación de textos de galeria */
+.content-foo h4{
+    color: #c77373
+    border-bottom 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/*Modificación de textos de footer */
+.content-foo p{
+    color: #fff;
+}
+
+.titulo final{
+    text-align: center;
+    font-size: 24px;
+    margin: 10px 0 0 0;
+    color: #F7B6EB;
+}
+
+/* Uso del mediaquerys */
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /*Galeria*/
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /*Clientes*/
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /*servicios */
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    nav>a{
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /*ABOUT US* responsive*/
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros.contenido-textos{
+        width: 95%;
+    }
+
+    /*Galeria*/
+
+    .imagen-port{
+        width: 95%;
+    }
+    /*Clients*/
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer*/
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: absolute;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #F7B6EB;
+        border-bottom: 1px solid #F7B6EB;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
