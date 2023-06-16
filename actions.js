@@ -21,6 +21,6 @@ const newPassword = document.getElementsByClassName
 
       // Ejemplo para mostrar un mensaje de éxito en el mismo formulario
       var messageElement = document.getElementById("message");
-      messageElement.textContent = "¡Contraseña recuperada con éxito!";
+      messageElement.textContent = "¡Registro con éxito!";
       messageElement.style.color = "#b40be7";
     });
