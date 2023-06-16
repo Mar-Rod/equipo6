@@ -44,7 +44,7 @@ h3{
   color: wheat;
 }
 .container1 {
-  background-color: black;
+  background-color: rgb(19, 247, 11);
   color: white;
   width: 300px;
   padding: 20px;
@@ -133,11 +133,17 @@ font-size: 50px;
   cursor: pointer;
 
 }
+
 #pago{
   display: grid;
-  grid-template-columns: repeat(2, 2fr) 1fr;
-  grid-template-rows: repeat(2,50);
-  row-gap: 1px;
+  grid-template-areas: "header";
+grid-gap: 1px;
+  grid-template-columns: repeat(3, 1fr) 1fr;
+  grid-template-rows:50px 50px 50px;
+  row-gap: 150px;
+  justify-content: space-between;
+  padding-right: 2px;
+
 
 }
 
@@ -147,7 +153,15 @@ font-size: 50px;
    border-width: 10px;
    border-color: 660033;
    background-color: cc3366;
+  height: 100px;
+  width: 200px;
 
+}
+.pagi{
+border-radius: 20px;
+  background-color: #de0fcd;
+  font-size: 50px;
+  cursor: pointer;
 }
 @import url("https://fonts.googleapis.com/css?family=Pontano+Sans");
 .container {
@@ -186,10 +200,7 @@ font-size: 50px;
   align-items: end;
 }
 
-.column-xs-1 {
-  flex-basis: 8.3333333333%;
-  max-width: 8.3333333333%;
-}
+
 
 .column-xs-2 {
   flex-basis: 16.6666666667%;
