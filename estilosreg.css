@@ -22,6 +22,7 @@ header .textos-header{
   }
      /* Uso del menu  */
 nav{
+    display: grid;
     text-align:right ;
     padding: 30px 50px 0 0;
 }
@@ -152,3 +153,45 @@ body {
     margin-top: 10px;
     color: red;
   }
+
+  footer{
+    display: grid;
+    background: #AA8ECD;
+    justify-content:center; 
+    margin: auto;
+    overflow: hidden;
+    height: min-content;   
+}
+
+
+.contenedor-footer{
+
+    width: 30%;
+    justify-content: space-evenly; /*Repartir elemenentos equitativamente */
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+/*Modificación de textos de galeria */
+.content-foo h4{
+    color: #c77373
+    border-bottom 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/*Modificación de textos de footer */
+.content-foo p{
+    color: #fff;
+}
+
+.titulo final{
+    text-align: center;
+    font-size: 10px;
+    margin: 10px 0 0 0;
+    color: #F7B6EB;
+}
